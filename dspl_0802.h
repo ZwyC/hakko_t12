@@ -1,9 +1,9 @@
 #ifndef _DSPL0802_H
 #define _DSPL0802_H
-#include "config.h"
-#include <LiquidCrystal.h>
+//#include "config.h"
 
 #ifdef DISPLAY_0802
+#include <LiquidCrystal.h>
 
 // The LCD 0802 parallel interface
 const uint8_t  LCD_RS_PIN     = 13;

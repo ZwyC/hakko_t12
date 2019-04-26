@@ -1,9 +1,9 @@
 #ifndef _DSPL1602_I2C_H
 #define _DSPL1602_I2C_H
-#include "config.h"
-#include <LiquidCrystal_I2C.h>
+//#include "config.h"
 
 #ifdef DISPLAY_1602_I2C
+#include <LiquidCrystal_I2C.h>
 
 // The LCD 1602 I2C interface
 const uint8_t  LCD_I2C_ADDR   = 0x27;

@@ -1,17 +1,18 @@
 #ifndef _DSPLOLED_I2C_H
 #define _DSPLOLED_I2C_H
-#include "config.h"
-#include <U8x8lib.h>
+//#include "config.h"
 
 #ifdef DISPLAY_OLED_I2C
+#include <U8x8lib.h>
 
+#define u8x8  U8X8_SSD1306_128X64_NONAME_HW_I2C
 // The LCD 1602 I2C interface
 const byte LCD_RS_PIN     = 7;
 
 //------------------------------------------ class lcd DSPLay for soldering IRON -----------------------------
 class DSPL : protected u8x8 {
   public:
-    DSPL(void) : u8x8( RS) { }
+    DSPL(void) : u8x8( LCD_RS_PIN) { }
     void init(void);
     void clear(void) { u8x8::clear(); }
     void tip(uint8_t  index, bool top);        	// Show the current tip (on top line)

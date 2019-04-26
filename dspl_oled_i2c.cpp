@@ -70,6 +70,7 @@ void DSPL::timeToOff(uint8_t  sec) {
 
 void DSPL::msgReady(void) {
   u8x8::draw2x2String(8, 0, " rdy");
+}
 
 void DSPL::msgWorking(void) {
   u8x8::draw2x2String(8, 0, " wrk");
