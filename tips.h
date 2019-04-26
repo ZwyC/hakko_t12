@@ -5,7 +5,7 @@
  * You must create own tip list in hakko_t12.ino file (see const char *tip_name[max_tips])
  */
 
-//const char *tip_name[max_tips] = {"BC2", "D24", "DL32", "DL52", "KR"};
-const char *tip_name[max_tips] = {"BC1", "BC2", "BC3", "BL", "C2", "C3", "D12", "D24", "DL32", "DL52", "IL", "KR", "JL02"};
+const char *tip_name[max_tips] = {"D16", "K", "ILS", "BCM2", "D24"};
+//const char *tip_name[max_tips] = {"BC1", "BC2", "BC3", "BL", "C2", "C3", "D12", "D24", "DL32", "DL52", "IL", "KR", "JL02"};
 
 #endif

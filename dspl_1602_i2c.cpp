@@ -4,7 +4,8 @@
 #ifdef DISPLAY_1602_I2C
 
 void DSPL::init(void) {
-  LiquidCrystal_I2C::begin();
+  LiquidCrystal_I2C::init();
+  LiquidCrystal_I2C::backlight();
   LiquidCrystal_I2C::clear();
   full_second_line = false;
 }
