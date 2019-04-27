@@ -5,8 +5,8 @@
 // Select appropriate display type
 
 //#define DISPLAY_0802
-//#define DISPLAY_1602_I2C
-#define DISPLAY_OLED_I2C
+#define DISPLAY_1602_I2C
+//#define DISPLAY_OLED_I2C
 
 #ifdef DISPLAY_OLED_I2C
 #include "dspl_oled_i2c.h"

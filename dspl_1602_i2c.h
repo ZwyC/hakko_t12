@@ -6,12 +6,12 @@
 #include <LiquidCrystal_I2C.h>
 
 // The LCD 1602 I2C interface
-const uint8_t  LCD_I2C_ADDR   = 0x27;
+const uint8_t  LCD_I2C_ADDR   = 0x3F;
 
 //------------------------------------------ class lcd DSPLay for soldering IRON -----------------------------
 class DSPL : protected LiquidCrystal_I2C {
   public:
-    DSPL(void) : LiquidCrystal_I2C(0x27, 16, 2) { }
+    DSPL(void) : LiquidCrystal_I2C(LCD_I2C_ADDR, 16, 2) { }
     void init(void);
     void clear(void) { LiquidCrystal_I2C::clear(); }
     void tip(uint8_t  index, bool top);        	// Show the current tip (on top line)
